@@ -11,4 +11,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PatientService {
     private final PatientRepository patientRepo;
+
+    public List<PatientResponseDto> getpatients(){
+        List<Patient> patients=patientRepo.findAll();
+    }
 }
